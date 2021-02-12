@@ -9,7 +9,6 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #456ABD;
   width: 100%;
   transition: background 0.3s ease;
 }

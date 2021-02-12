@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Info+</title>
+        <link type="image/png" href="https://i.ibb.co/cxPDxtL/Free-Sample-By-Wix.jpg" rel="shortcut icon">
   </head>
   <body>
     <div class="blog-card">
       <input type="radio" name="select" id="tap-1" checked>
       <input type="radio" name="select" id="tap-2">
       <input type="radio" name="select" id="tap-3">
-      <input type="checkbox" id="imgTap">
       <div class="sliders">
         <label for="tap-1" class="tap tap-1"></label>
         <label for="tap-2" class="tap tap-2"></label>
@@ -65,7 +65,7 @@ body{
   justify-content: center;
   height: 100vh;
   font-family: 'Fira Sans', sans-serif;
-  background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+  background: #456ABD;
 }
 
 a{
@@ -90,10 +90,6 @@ a{
   justify-content: center;
   padding: 0 25px;
 }
-#imgTap:checked ~ .inner-part {
-  padding: 0;
-  transition: .1s ease-in;
-}
 .inner-part .img{
   height: 260px;
   width: 260px;
@@ -102,18 +98,11 @@ a{
   border-radius: 20px;
   box-shadow: 2px 3px 15px rgba(252,56,56,.1);
 }
-#imgTap:checked ~ .inner-part .img{
-  height: 370px;
-  width: 850px;
-  z-index: 99;
-  margin-top: 10px;
-  transition: .3s .2s ease-in;
-}
 .img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  cursor: pointer;
+  cursor: deafult;
   opacity: 0;
   transition: .6s;
 }
@@ -173,11 +162,11 @@ a{
   border-radius: 50px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #fd3535;
-  background: linear-gradient(147deg, #fe8a39  0%, #fd3838 74%);
+  border: 1px solid #456ABD;
+  background: linear-gradient(147deg, #456ABD  0%, #004fff 74%);
 }
 .content button:hover{
-  background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+  background: linear-gradient(147deg, #2a4173 0%, #002d91 74%);
 }
 .sliders{
   position: absolute;
@@ -186,9 +175,7 @@ a{
   transform: translateX(-50%);
   z-index: 12;
 }
-#imgTap:checked ~ .sliders{
-  display: none;
-}
+
 .sliders .tap{
   position: relative;
   height: 10px;
@@ -209,14 +196,13 @@ a{
   left: 0;
   height: 100%;
   width: -100%;
-  background: linear-gradient(147deg,#f6b323 0%, #f23b26 74%);
+  background: linear-gradient(147deg,#428af5 0%, #1c59ff 74%);
   border-radius: 10px;
   transform: scaleX(0);
   transition: transform .6s;
   transform-origin: left;
 }
-input[type="radio"],
-input[type="checkbox"]{
+input[type="radio"]{
   display: none;
 }
 #tap-1:checked ~ .sliders .tap-1:before,
