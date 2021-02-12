@@ -76,6 +76,9 @@ nav ul li a{
   width: 100%;
   border-left: 3px solid transparent;
 }
+h1{
+  color : white;
+}
 nav ul li.active a{
   color: cyan;
   background: #1e1e1e;
